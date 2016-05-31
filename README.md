@@ -1,0 +1,3 @@
+# light-debounce
+
+Lightweight debouncing.
