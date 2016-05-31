@@ -4,8 +4,8 @@
   "description": "Lightweight debouncing.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "webpack --progress --colors",
-    "watch": "webpack --progress --colors --watch",
+    "build": "babel index.js --out-dir dist",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,11 +20,5 @@
   },
   "homepage": "https://github.com/MWGitHub/light-debounce#readme",
   "devDependencies": {
-    "babel-core": "^6.9.1",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "webpack": "^1.13.1"
   }
 }
